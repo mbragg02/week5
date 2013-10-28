@@ -17,6 +17,7 @@ public class IntSetScript {
 		listSet.add(53);
 		listSet.add(23);
 		listSet.add(76);
+		listSet.add(76);
 		System.out.println(listSet.containsVerbose(5));
 		System.out.println(listSet.toString());
 		
