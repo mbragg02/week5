@@ -10,21 +10,21 @@ public class IntegerTreeScript {
 	}
 	
 	public void launch(IntegerTreeNode tree) {
-		tree = new IntegerTreeNode(6);
-		tree.add(5);
-//		tree.add(9);
-//		tree.add(3);
-//		tree.add(8);
-//		tree.add(11);
-//		tree.add(12);
+		tree = new IntegerTreeNode(5);
+		tree.add(6);
+		tree.add(9);
+		tree.add(3);
+		tree.add(8);
+		tree.add(11);
+		tree.add(12);
 
 
 		System.out.println("Max: " + tree.getMax());
 		System.out.println("Min: " + tree.getMin());
-		
 		System.out.println("Depth: " + tree.depth());
+//		System.out.println("String representation: " + tree.toString());
+		tree.toString(tree, "");
 		
-
 		
 	}
 

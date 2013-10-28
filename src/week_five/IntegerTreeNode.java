@@ -2,9 +2,9 @@ package week_five;
 
 public class IntegerTreeNode {
 	
-	int value;
-	IntegerTreeNode left;
-	IntegerTreeNode right;
+	private int value;
+	private IntegerTreeNode left;
+	private IntegerTreeNode right;
 	
 	public IntegerTreeNode(int newNumber) {
 		left = null;
@@ -106,9 +106,56 @@ public class IntegerTreeNode {
 		
 		
 	}
+	
+	
+	public void toString(IntegerTreeNode node, String s) {
+		
+		if (node != null) {
+//			System.out.println(node.value + "\n");
+			if (node.left != null && node.right != null) {
+				s += "[ " + node.value + " L[" + node.left.value + "]" + " R[" + node.right.value + "] ]" ;
+			} 
+			if (node.left != null && node.right == null) {
+				s += "[ " + node.value + " L[" + node.left.value + "]" + " R[] ]" ;
+				toString(node.left, s);
+			}
+			if (node.right != null && node.left == null) {
+				s += "[ " + node.value + " L[]" + " R[" + node.right.value + "] ]" ;
+				toString(node.right, s);
+			} else {
+				s += "[ " + node.value + " L[]" + " R[] ]" ;
+			}
+			 
+			
+		} 
+//		if (node.left != null) {
+////			System.out.println("L " + node.left.value + "\n");
+//			s += " L[" + node.left.value + "]";
+//			toString(node.left, s);
+//		}
+//		if (node.right != null) {
+//			s += " R[" + node.right.value + "]";
+//
+////			System.out.println("R " + node.right.value + "\n");
+//			toString(node.right, s);
+//			
+//		}
+//		s += " ]";
+		System.out.println(s);
+
+
+	}
 		
 
 	
+//	 prints out all the values in order
+//	if (node != null) {
+//		  toString(node.left);
+//	      System.out.println("  Traversed " + node.value);
+//	      toString(node.right);
+//	    }
+//	
+
 	
 		 
 		
