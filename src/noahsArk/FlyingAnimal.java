@@ -1,6 +1,6 @@
 package noahsArk;
 
-public class FlyingAnimal implements Animal, Eggs{
+public class FlyingAnimal extends Eggs implements Animal{
 
 	@Override
 	public void call(String animalName) {
@@ -8,13 +8,10 @@ public class FlyingAnimal implements Animal, Eggs{
 		
 	}
 
-	private void layEggs() {
-		System.out.println("Laying an egg");	
-	}
-
+	
 	@Override
 	public void reproduce() {
-		layEggs();
+		super.layEggs();
 		
 	}
 

@@ -1,6 +1,8 @@
 package noahsArk;
 
-public interface Eggs {
+public abstract class Eggs {
 
-	void reproduce();
+	public void layEggs() {
+		System.out.println("Laying an egg");	
+	}
 }

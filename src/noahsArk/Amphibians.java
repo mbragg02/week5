@@ -1,6 +1,6 @@
 package noahsArk;
 
-public class Amphibians extends AquaticAnimal implements Eggs {
+public class Amphibians extends AquaticAnimal {
 
 
 

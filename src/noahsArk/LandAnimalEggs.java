@@ -1,15 +1,26 @@
 package noahsArk;
 
-public class LandAnimalEggs extends LandAnimal implements Eggs  {
+public class LandAnimalEggs extends Eggs implements Animal {
 
-	private void layEggs() {
-		System.out.println("Laying an egg");
+	@Override
+	public void call(String animalName) {
+		System.out.println(animalName + " coming...");
 		
 	}
+
 	@Override
 	public void reproduce() {
-		layEggs();
+		super.layEggs();
+		
 	}
+
+	@Override
+	public void makeSound() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
 
 
 }

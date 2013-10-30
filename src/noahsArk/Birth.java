@@ -1,7 +1,10 @@
 package noahsArk;
 
-public interface Birth {
+public abstract class Birth {
 	
-	void giveBirth();
+	public void giveBirth() {
+		System.out.println("Giving birth");	
+
+	}
 
 }

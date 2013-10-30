@@ -1,6 +1,6 @@
 package noahsArk;
 
-public class AquaticAnimal implements Animal, Eggs {
+public class AquaticAnimal extends Eggs implements Animal {
 
 	@Override
 	public void call(String animalName) {
@@ -8,9 +8,6 @@ public class AquaticAnimal implements Animal, Eggs {
 		
 	}
 
-	private void layEggs() {
-		System.out.println("Laying an egg");
-	}
 
 	@Override
 	public void reproduce() {
