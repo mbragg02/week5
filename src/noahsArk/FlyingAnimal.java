@@ -1,22 +1,25 @@
 package noahsArk;
 
-public class FlyingAnimal extends Eggs implements Animal{
+public class FlyingAnimal implements Animal, Eggs{
 
 	@Override
 	public void call(String animalName) {
-		System.out.println(animalName + " now flying, will come later when tired...");
-		
+		System.out.println(animalName + " now flying, will come later when tired...");		
 	}
 
-	
 	@Override
 	public void reproduce() {
-		super.layEggs();
-		
+		layEggs();
 	}
 
 	@Override
 	public void makeSound() {		
+	}
+
+	@Override
+	public void layEggs() {
+		System.out.println("Laying eggs...");
+		
 	}
 
 }

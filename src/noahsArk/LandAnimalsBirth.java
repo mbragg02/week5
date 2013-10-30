@@ -1,27 +1,16 @@
 package noahsArk;
 
-public class LandAnimalsBirth extends Birth implements Animal {
+public abstract class LandAnimalsBirth extends LandAnimal implements Birth {
 
-	@Override
-	public void call(String animalName) {
-		System.out.println(animalName + " coming...");
-		
-	}
 
 	@Override
 	public void reproduce() {
-		super.giveBirth();
-		
+		giveBirth();
 	}
 
 	@Override
-	public void makeSound() {
-		// TODO Auto-generated method stub
-		
+	public void giveBirth() {
+		System.out.println("Giving birth...");
 	}
-
-
-
-
 
 }

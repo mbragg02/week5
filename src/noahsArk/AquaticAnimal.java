@@ -1,13 +1,11 @@
 package noahsArk;
 
-public class AquaticAnimal extends Eggs implements Animal {
+public class AquaticAnimal implements Animal, Eggs {
 
 	@Override
 	public void call(String animalName) {
-		System.out.println(animalName + " will not come...");
-		
+		System.out.println(animalName + " will not come...");	
 	}
-
 
 	@Override
 	public void reproduce() {
@@ -16,8 +14,13 @@ public class AquaticAnimal extends Eggs implements Animal {
 	}
 
 	@Override
-	public void makeSound() {
-		// TODO Auto-generated method stub
+	public void makeSound() {		
+	}
+
+
+	@Override
+	public void layEggs() {
+		System.out.println("Laying eggs...");
 		
 	}
 

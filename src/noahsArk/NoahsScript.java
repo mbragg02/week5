@@ -15,6 +15,8 @@ public class NoahsScript {
 		/**
 		 * bears, beetles, cats, crocodiles, dogs, dolphins, eagles, flies, frogs, lizards, monkeys, pigeons, salmon, sharks, snakes, whales.
 		 */
+		
+		
 		Fish salmon = new Fish();
 		Fish whales = new Fish();
 		Fish sharks = new Fish();
@@ -45,7 +47,8 @@ public class NoahsScript {
 		
 	
 		
-//		eagles.makeSound();
+		eagles.makeSound();
+		sharks.makeSound();
 	
 	}
 
