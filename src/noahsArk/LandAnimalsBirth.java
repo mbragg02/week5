@@ -13,4 +13,5 @@ public abstract class LandAnimalsBirth extends LandAnimal implements Birth {
 		System.out.println("Giving birth...");
 	}
 
+	
 }
