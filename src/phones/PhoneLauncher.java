@@ -8,7 +8,7 @@ public class PhoneLauncher {
 	}
 	
 	private void launch() {
-		SmartPhone iPhone = new SmartPhone();
+		SmartPhone iPhone = new SmartPhone("Apple");
 		iPhone.browseWeb("google.com");
 		iPhone.findPosition();
 		iPhone.playGame("snake");
@@ -26,16 +26,22 @@ public class PhoneLauncher {
 		iPhone.call("111111111111");
 		iPhone.call("1212121212");
 		iPhone.call("1313131313");
+		iPhone.call("0013131313");
 		iPhone.printLastNumbers();
+		System.out.println("Brand: " + iPhone.getBrand());
 		
 		
 		
-		MobilePhone nokia = new MobilePhone();
+		MobilePhone nokia = new MobilePhone("Nokia");
 		nokia.call("07787344525");
 		nokia.printLastNumbers();
+		System.out.println("Brand: " + nokia.getBrand());
+
 		
-		OldPhone housePhone = new OldPhone();
+		OldPhone housePhone = new OldPhone("BT");
 		housePhone.call("01609 772969");
+		System.out.println("Brand: " + housePhone.getBrand());
+
 	}
 
 }

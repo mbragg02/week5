@@ -4,13 +4,17 @@ import java.util.ArrayList;
 
 public class MobilePhone extends OldPhone {
 	
+	public MobilePhone(String brand) {
+		super(brand);
+	}
+
 	private ArrayList<String> lastTenNumbers = new ArrayList<String>();
 	
 	public void ringAlarm(String number) {
 		System.out.println("Ringing alarm " + number);
 	}
 	
-	public void playGame(String number) {
+	private void playGame(String number) {
 		System.out.println("Play game " + number);
 	}
 	
@@ -25,7 +29,10 @@ public class MobilePhone extends OldPhone {
 	
 	public void call(String number) {
 		super.call(number);
-		
+		addToCallHistory(number);	
+	}
+	
+	public void addToCallHistory(String number) {
 		if (lastTenNumbers.size() <= 10) {
 			lastTenNumbers.add(0, number);
 		} else {
@@ -33,7 +40,6 @@ public class MobilePhone extends OldPhone {
 			lastTenNumbers.add(0, number);
 						
 		}
-		
 	}
 
 }
