@@ -1,4 +1,5 @@
 package javaMagic;
+ 
 
 public class Lecturer extends Teacher {
 
